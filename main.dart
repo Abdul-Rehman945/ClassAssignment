@@ -1,6 +1,5 @@
+import 'package:bmi_calculator/onboardingscreen.dart';
 import 'package:flutter/material.dart';
-import 'package:todolist/ProductTable.dart';
-
 
 void main() {
   runApp(const MyApp());
@@ -15,11 +14,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black12),
+        useMaterial3: true,
+      
       ),
-      debugShowCheckedModeBanner: false,
-      home:ProductCart()
+      home:  OnBoardingScreenCopy()
+      
     );
   }
 }
+
 
